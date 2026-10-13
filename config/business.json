@@ -1,0 +1,213 @@
+{
+  "_NOTE": "SAMPLE CONTENT for demo only (modeled on typical independent-salon menus; not her real data). Replace services, prices, hours, address, and contact before going live.",
+  "businessName": "Sample Studio (demo)",
+  "stylistName": "[Stylist name]",
+  "timezone": "America/New_York",
+  "address": "[Studio address \u2014 not provided]",
+  "phoneDisplay": "[CLIENT-FACING PHONE NUMBER]",
+  "slotIntervalMinutes": 15,
+  "bufferMinutes": 0,
+  "minNoticeHours": 2,
+  "bookingWindowDays": 30,
+  "workingHours": {
+    "_NOTE": "SAMPLE hours. 24h HH:MM; [] = closed; multiple ranges allowed.",
+    "sun": [],
+    "mon": [],
+    "tue": [
+      [
+        "10:00",
+        "18:00"
+      ]
+    ],
+    "wed": [
+      [
+        "10:00",
+        "18:00"
+      ]
+    ],
+    "thu": [
+      [
+        "11:00",
+        "19:00"
+      ]
+    ],
+    "fri": [
+      [
+        "09:00",
+        "17:00"
+      ]
+    ],
+    "sat": [
+      [
+        "09:00",
+        "15:00"
+      ]
+    ]
+  },
+  "closedDates": [
+    "2026-12-25"
+  ],
+  "services": [
+    {
+      "id": "cut-short",
+      "name": "Haircut \u2013 short/standard",
+      "category": "Cuts",
+      "durationMinutes": 45,
+      "priceFrom": 70,
+      "priceTo": 95,
+      "description": "Consultation, wash, precision cut and style.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "cut-long",
+      "name": "Haircut \u2013 long/thick",
+      "category": "Cuts",
+      "durationMinutes": 60,
+      "priceFrom": 90,
+      "priceTo": 130,
+      "description": "For longer or denser hair.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "trim",
+      "name": "Bang / neckline trim",
+      "category": "Cuts",
+      "durationMinutes": 15,
+      "priceFrom": 0,
+      "priceTo": 25,
+      "description": "Quick clean-up between cuts.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "blowout",
+      "name": "Blowout",
+      "category": "Styling",
+      "durationMinutes": 45,
+      "priceFrom": 55,
+      "priceTo": 80,
+      "description": "Wash and smooth or voluminous blow-dry.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "updo",
+      "name": "Special-occasion style / updo",
+      "category": "Styling",
+      "durationMinutes": 60,
+      "priceFrom": 120,
+      "priceTo": 160,
+      "description": "Event styling; trial recommended for weddings.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "root",
+      "name": "Root touch-up",
+      "category": "Color",
+      "durationMinutes": 90,
+      "priceFrom": 110,
+      "priceTo": 160,
+      "description": "Root color up to ~1 inch of regrowth.",
+      "depositRequired": 50,
+      "sample": true
+    },
+    {
+      "id": "allover",
+      "name": "All-over single-process color",
+      "category": "Color",
+      "durationMinutes": 120,
+      "priceFrom": 140,
+      "priceTo": 210,
+      "description": "Full-head single color.",
+      "depositRequired": 50,
+      "sample": true
+    },
+    {
+      "id": "gloss",
+      "name": "Gloss / toner",
+      "category": "Color",
+      "durationMinutes": 45,
+      "priceFrom": 65,
+      "priceTo": 120,
+      "description": "Refreshes tone and shine.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "partial-hl",
+      "name": "Partial highlights",
+      "category": "Color",
+      "durationMinutes": 120,
+      "priceFrom": 150,
+      "priceTo": 240,
+      "description": "Foils around face and crown.",
+      "depositRequired": 50,
+      "sample": true
+    },
+    {
+      "id": "full-hl",
+      "name": "Full highlights",
+      "category": "Color",
+      "durationMinutes": 180,
+      "priceFrom": 210,
+      "priceTo": 300,
+      "description": "Foils throughout the whole head.",
+      "depositRequired": 100,
+      "sample": true
+    },
+    {
+      "id": "balayage",
+      "name": "Balayage",
+      "category": "Color",
+      "durationMinutes": 180,
+      "priceFrom": 225,
+      "priceTo": 350,
+      "description": "Hand-painted, lived-in dimension; toner included.",
+      "depositRequired": 100,
+      "sample": true
+    },
+    {
+      "id": "treatment",
+      "name": "Conditioning / bond treatment (add-on)",
+      "category": "Treatments",
+      "durationMinutes": 15,
+      "priceFrom": 35,
+      "priceTo": 50,
+      "description": "Add to any service.",
+      "depositRequired": 0,
+      "sample": true
+    },
+    {
+      "id": "smoothing",
+      "name": "Keratin smoothing treatment",
+      "category": "Treatments",
+      "durationMinutes": 180,
+      "priceFrom": 275,
+      "priceTo": 350,
+      "description": "Frizz reduction lasting several months.",
+      "depositRequired": 100,
+      "sample": true
+    },
+    {
+      "id": "consult",
+      "name": "Color consultation",
+      "category": "Consultation",
+      "durationMinutes": 15,
+      "priceFrom": 0,
+      "priceTo": 0,
+      "description": "Free; recommended before major color changes.",
+      "depositRequired": 0,
+      "sample": true
+    }
+  ],
+  "policies": {
+    "_NOTE": "SAMPLE policies modeled on common salon practice \u2014 she must set her own.",
+    "cancellation": "Please give at least 24 hours' notice to cancel or reschedule. Late cancellations may be charged 50% of the booked service; no-shows may be charged in full.",
+    "deposit": "Color and services over 2 hours require a deposit at booking, applied to your service. Deposits are forfeited for cancellations under 24 hours.",
+    "late": "Arriving more than 15 minutes late may mean shortening or rescheduling your service.",
+    "pricing": "Prices are starting ranges; final price depends on length, density, and the work required."
+  }
+}

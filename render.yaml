@@ -1,0 +1,17 @@
+# Render Blueprint: free-tier Docker web service.
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: salon-booking-demo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      # Leave blank in the dashboard to use the app default (demo-pass-2026).
+      # sync: false so a password you set later is not overwritten by the blueprint.
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: TZ
+        value: America/New_York

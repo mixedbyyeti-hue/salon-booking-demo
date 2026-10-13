@@ -1,0 +1,80 @@
+{
+  "_NOTE": "Auto-draft rules for inbound SMS. First matching rule (any keyword, case-insensitive) wins. Placeholders: {bookingLink} {address} {hours} {prices} {businessName} {stylistName} {phone}. Policy text comes from business.json 'policies' (SAMPLE). Also {cancellationPolicy} {depositPolicy} {latePolicy}.",
+  "rules": [
+    {
+      "id": "cancel",
+      "keywords": [
+        "cancel",
+        "reschedule",
+        "can't make",
+        "cant make",
+        "move my"
+      ],
+      "booking": true,
+      "reply": "Thanks for letting me know! You can pick a new time here: {bookingLink}. {cancellationPolicy}"
+    },
+    {
+      "id": "book",
+      "keywords": [
+        "book",
+        "appointment",
+        "appt",
+        "available",
+        "availability",
+        "opening",
+        "slot",
+        "schedule"
+      ],
+      "booking": true,
+      "reply": "Hi! You can see open times and book here: {bookingLink}"
+    },
+    {
+      "id": "prices",
+      "keywords": [
+        "price",
+        "cost",
+        "how much",
+        "rate",
+        "$"
+      ],
+      "booking": true,
+      "reply": "Current services: {prices}. Book here: {bookingLink}"
+    },
+    {
+      "id": "hours",
+      "keywords": [
+        "hours",
+        "open",
+        "close",
+        "what time"
+      ],
+      "booking": true,
+      "reply": "My hours: {hours}. Book here: {bookingLink}"
+    },
+    {
+      "id": "location",
+      "keywords": [
+        "where",
+        "address",
+        "location",
+        "parking",
+        "directions"
+      ],
+      "booking": false,
+      "reply": "I'm located at {address}. [SAMPLE: add parking/entry instructions]"
+    },
+    {
+      "id": "policies",
+      "keywords": [
+        "policy",
+        "late",
+        "deposit",
+        "no show",
+        "no-show"
+      ],
+      "booking": false,
+      "reply": "{cancellationPolicy} {depositPolicy} {latePolicy}"
+    }
+  ],
+  "fallback": "Thanks for your message! I'll get back to you soon. To book anytime: {bookingLink}"
+}
